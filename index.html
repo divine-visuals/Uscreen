@@ -7,47 +7,307 @@
     <title>Video Business Blog</title>
 
     <link rel="stylesheet" href="style.css">
-
+   
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- icon-font -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+     <script src="https://unpkg.com/lucide@latest"></script>
+
+
 </head>
 
 <body>
 
     <!-- ================= HEADER ================= -->
-    <header class="header">
+    <header>
+        <div class="icon"> <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 256 256"
+            width="50"
+            height="50"
+    >
+        <path
+            d="M211.4 172.36c-1.37.86-2.83 1.56-4.33 2.1V183c0 21.45-17.45 38.91-38.89 38.91h-.24c-21.33-.12-38.68-17.79-38.68-39.39v-66.08c0-9.06-7.37-16.43-16.43-16.43s-16.43 7.37-16.43 16.43v65.99c0 19.11 7.47 37.2 21.04 50.94 13.62 13.79 31.62 21.39 50.68 21.4h.03c39.57 0 71.76-32.19 71.76-71.76v-28.49l-28.51 17.84z"
+            fill="#141414"
+        ></path>
 
-        <div class="container nav-container">
-
-            <a href="#" class="logo">
-                USCREEN
-            </a>
-
-            <nav class="nav">
-
-                <a href="#">Product</a>
-                <a href="#">Use Cases</a>
-                <a href="#">Customer Examples</a>
-                <a href="#">Learn</a>
-                <a href="#">Pricing</a>
-                <a href="#">Features</a>
-
-            </nav>
-
-            <div class="nav-buttons">
-                <a href="#" class="login">Log In</a>
-                <a href="#" class="demo-btn">Start Free Trial</a>
-            </div>
-
+        <path
+            d="M245.1 121.24 203.04 94.9c-4.37-2.74-10.04.41-10.04 5.56v52.67c0 5.16 5.67 8.3 10.04 5.56l42.06-26.33c4.1-2.57 4.1-8.55 0-11.12z"
+            fill="#016aff"></path>
+         </svg>
         </div>
 
-    </header>
+        <nav>
+          <div class="nav-links"> 
+            <a href="#" class="menu-links"  id="ProductLink"> Product <span>v</span></a>
+            <a href="#" class="menu-links"  id="usecasesLink">Use Cases <span>v</span></a>
+            <a href="#" class="menu-links"  id="switchLink">Switch to Uscreen <span>v</span></a>
+            <a href="#" class="menu-links" id="learnLink">Learn <span>v</span></a>
+            <a href="#" class="menu-links" id="pricingLink">Pricing</a>
+         </div>
+        </nav>
+
+        
+        <div class="nav-buttons">
+            <a href="#login" class="login">Login</a>
+            <a href="#start free trial" class="start-free-button">Start Free Trial</a>
+        </div>
+        
+        <!-- product-menu ====-->
+        <div class="mega-menu" id="productmenu">
+            
+            <div class="menu-item">
+                <h3>
+                    <i data-lucide="monitor-smartphone" class="menu-logo"></i>
+                    <span>Mobile + TV Apps</span>
+                </h3>
+                <p>Launch your own Mobile + TV Apps, no coding skills required.</p>
+            </div>
+            
+            <div class="menu-item">
+                <h3>
+                    <i data-lucide="video" class="menu-logo"></i> 
+                    <span>Live Streaming</span>
+                </h3>
+                <p>Enjoy a native live streaming experience from any device.</p>
+            </div> 
+    
+            <div class="menu-item">
+                <h3>
+                    <i data-lucide="square-pen" class="menu-logo"></i>
+                    <span>Video Experience</span>
+                </h3>
+                <p>Upload. Organize. Stream. Put your content at the center of your Membership.</p>
+            </div> 
+            
+            <div class="menu-item">
+                <h3>
+                   <i data-lucide="user-group" class="menu-logo"></i>
+                   <span>Community</span>
+                </h3> 
+                <p>Forge a strong bond with your audience using community features.</p>
+            </div> 
+    
+            <div class="menu-item">
+                <h3>
+                    <i data-lucide="chart-no-axes-combined" class="menu-logo"></i>
+                    <span>Marketing Tools</span>
+                </h3>
+                <p>All your marketing & member management needs in one place.</p>
+            </div>
+    
+    
+            <div class="menu-item">
+                <h3>
+                   <i data-lucide="circle-dollar-sign" class="menu-logo"></i>
+                   <span>Video Monetization</span>
+                </h3> 
+                <p>Earn recurring revenue from your content.</p>
+            </div> 
+    
+            <div class="menu-image">
+                <img src="assets/assets/nav-1.webp" alt="">
+            </div>
+    
+        </div>
+
+
+
+        <!-- ======Usecases============ -->
+
+        <div class="mega-menu" id="usecasesmenu">
+            
+        <div class="customer-examples">
+
+            <div class="examples">
+                <h3>
+                    <span>Customer Examples</span>
+                </h3>
+                <p>Yoga</p>
+                <p> Fitness & Sports</p>
+                <p>Education</p>
+                <p>Entertainment</p>
+                <p>Lifestyle</p>
+                <p>Faith & Spiritual</p>
+                <h3>View All</h3>
+            </div>
+            
+            </div>
+            
+            <div class="menu-item fitness">
+                <h3>
+                    <i data-lucide="video" class="menu-logo"></i> 
+                    <span>Fitness & Wellness</span>
+                </h3>
+                <p>For leaders in the fitness, yoga, pilates & wellness space.</p>
+            </div> 
+    
+            <div class="menu-item education">
+                <h3>
+                    <i data-lucide="users" class="menu-logo"></i>
+                    <span>Educational Creators</span>
+                </h3>
+                <p>For Creators who want to monetize their niche.</p>
+            </div> 
+            
+            <div class="menu-item business">
+                <h3>
+                   <i data-lucide="globe" class="menu-logo"></i>
+                   <span>Media Business</span>
+                </h3> 
+                <p>For media companies of all shapes & sizes.</p>
+            </div> 
+    
+            <div class="menu-item event">
+                <h3>
+                    <i data-lucide="tv" class="menu-logo"></i>
+                    <span>Event Broadcasters</span>
+                </h3>
+                <p>For organizations who want to broadcast and live stream events.</p>
+            </div>
+    
+    
+            <div class="menu-item youtubers">
+                <h3>
+                   <i data-lucide="tv-minimal-play" class="menu-logo"></i>
+                   <span>Youtubers & Influencers</span>
+                </h3> 
+                <p>For those with a growing audience on social media.</p>
+            </div> 
+    
+            <div class="ranked">
+                <h3>Ranked #1 by  Customers</h3>
+                <p>The results are clear. Uscreen is the top choice for users looking to monetize their videos and grow their businesses.</p>
+                <h4><i data-lucide="circle-help" class="menu-logo"></i>G2</h4>
+                <h4><i data-lucide="star"></i> Trustpilot</h4>
+                <h4><i data-lucide="navigation"></i> Capeterra</h4>
+            </div>
+    
+        </div>
+
+        <!-- Switch to Uscreen -->
+         <div class="mega-menu" id="switchmenu">
+
+             <div class="customer-examples">
+
+            <div class="examples">
+                <h3>
+                    <span>Customer Examples</span>
+                </h3>
+                <p>Yoga</p>
+                <p> Fitness & Sports</p>
+                <p>Education</p>
+                <p>Entertainment</p>
+                <p>Lifestyle</p>
+                <p>Faith & Spiritual</p>
+                <h3>View All</h3>
+            </div>
+            
+            </div>
+            
+            <div class="switch-item compare">
+                <h3>
+                    <i data-lucide="video" class="menu-logo"></i> 
+                    <span>Compare Uscreen</span>
+                </h3>
+                <p>Checkout the top Video Membership Platforms and see how Uscreen compares.</p>
+            </div> 
+    
+            <div class="switch-item success">
+                <h3>
+                    <i data-lucide="users" class="menu-logo"></i>
+                    <span>Success Stories</span>
+                </h3>
+                <p>Discover how real people transformed their businesses after migrating.</p>
+            </div> 
+            
+            <div class="switch-item uscreen">
+                <h3>
+                   <i data-lucide="globe" class="menu-logo"></i>
+                   <span>Switch to Uscreen</span>
+                </h3> 
+                <p>Understand the ins-and-outs of the Uscreen Migration process.</p>
+            </div> 
+    
+            <div class="switch-item customer">
+                <h3>
+                    <i data-lucide="tv" class="menu-logo"></i>
+                    <span>Customer Reviews</span>
+                </h3>
+                <p>Reviews from real customers who migrated to Uscreen.</p>
+            </div>
+    
+            <div class="ranked">
+                <h3>Ranked #1 by  Customers</h3>
+                <p>Our team excels in customer migrations, and you can check the reviews below to see for yourself!</p>
+                <h4><i data-lucide="circle-help" class="menu-logo"></i>G2</h4>
+                <h4><i data-lucide="star"></i> Trustpilot</h4>
+                <h4><i data-lucide="navigation"></i> Capeterra</h4>
+            </div>
+    
+           
+        </div>
+
+
+        <!-- Learn -->
+        <div class="mega-menu" id="learnmenu">
+            
+            <div class="menu-item">
+                
+                    <i data-lucide="monitor-smartphone"></i>
+                <h3>
+                    <span>Uscreen Blog</span>
+                </h3>
+                <p>Dive into the latest insights, tips, and trends in the world of memberships.</p>
+            </div>
+            
+            <div class="menu-item">
+                <h3>
+                    <i data-lucide="video"></i> 
+                    <span>Resource</span> <strong>NEW</strong>
+                </h3>
+                <p>From guides and templates, to workshops and expert strategies, find your success here.</p>
+            </div> 
+    
+            <div class="menu-item">
+                <h3>
+                    <i data-lucide="square-pen"></i>
+                    <span>Help Center</span>
+                </h3>
+                <p>Get answers, troubleshoot issues, and master the Uscreen Platform.</p>
+            </div> 
+            
+            <div class="menu-item">
+                <h3>
+                   <i data-lucide="user-group"></i>
+                   <span>Case studies</span>
+                </h3> 
+            </div> 
+    
+            <div class="menu-item">
+                <h3>
+                    <i data-lucide="chart-no-axes-combined"></i>
+                    <span>Growth Coaching</span>
+                </h3>
+                <p>Work with a coach who grows memberships for a living.</p>
+            </div>
+    
+            <div class="menu-image">
+                <img src="assets/assets/nav-1.webp" alt="">
+            </div>
+    
+        </div>
+
+    </header>        
+    
 
 
     <!-- ================= HERO ================= -->
-    <main>
+     <main>
 
         <section class="hero">
 
@@ -70,7 +330,7 @@
         </section>
 
 
-        <!-- ================= FEATURED ARTICLE ================= -->
+        <!-- ====== FEATURED ARTICLE ================= -->
         <section class="featured-section">
 
             <div class="container">
@@ -133,50 +393,25 @@
         </section>
 
 
-        <!-- ================= CATEGORY + SEARCH ================= -->
-        <section class="browse-section">
+        <!-- ==== CATEGORY + SEARCH ======= -->
+        <div class="category-search">
+            <!-- <div class="cat"> -->
+                <select class="article-search">
+                    <option value="all categories">All categories</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="">Be Inspired</option>
+                    <option value="">Industry News</option>
+                    <option value="">Feature Update</option>
+                </select>
 
-            <div class="container">
-
-                <div class="browse-top">
-
-                    <div>
-                        <p class="browse-label">EXPLORE</p>
-                        <h2>Browse by category</h2>
-                    </div>
-
-                    <div class="category-list">
-
-                        <a href="#" class="active">All categories</a>
-                        <a href="#">Video Monetization</a>
-                        <a href="#">Marketing</a>
-                        <a href="#">Be Inspired</a>
-                        <a href="#">Industry News</a>
-                        <a href="#">Feature Updates</a>
-
-                    </div>
-
-                </div>
-
-
-                <div class="search-box">
-
+                <div class="article-search">
                     <span class="search-icon">⌕</span>
 
-                    <input
-                        type="text"
-                        placeholder="Search articles..."
-                    >
-
-                    <button type="button">
-                        Clear
-                    </button>
-
-                </div>
-
-            </div>
-
-        </section>
+                    <input type="text" id="articlesearch" placeholder="search articles...">
+                    <button id="clearsearch">x</button>
+                </div>   
+            <!-- </div> -->
+        </div>
 
 
         <!-- ================= ARTICLES ================= -->
@@ -185,8 +420,6 @@
             <div class="container">
 
                 <div class="section-heading">
-
-                    <p>OUR LATEST ARTICLES</p>
 
                     <h2>More to explore</h2>
 
@@ -514,7 +747,7 @@
                         <a href="#" class="article-image">
 
                             <img
-                                src="assets/assets/img-13.webp"
+                                src="assets/assets/second-img.webp"
                                 alt="Creative team"
                             >
 
@@ -574,13 +807,13 @@
 
                 <!-- ================= PAGINATION ================= -->
 
-                <div class="pagination">
+                <div class="pagin">
 
                     <a href="#" class="previous">
                         ← Prev
                     </a>
 
-                    <a href="#" class="page active-page">
+                    <a href="#" class="active-page">
                         1
                     </a>
 
@@ -646,6 +879,7 @@
 
                     <p>
                         Video Membership Platform.
+                        Uscreen™ All Rights Reserved, 2026.
                     </p>
 
                 </div>
@@ -724,18 +958,28 @@
 
             </div>
 
+            <div class="footer-bottom-part">
 
-            <div class="footer-bottom">
+            <div class="footer-link">
+                    <a href="#">PUBLISHER TERMS</a>
+                    <a href="#">CONTENT RESTRICTIONS</a>
+                    <a href="#">PRIVACY POLICY</a>
+                    <a href="#">COOKIE STATEMENT</a>
+               
 
-                <p>
-                    © 2026 Video Business Blog. All rights reserved.
-                </p>
+                <div class="footer-icon">
 
-                <div class="footer-links">
+                    <p>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
 
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms</a>
-                    <a href="#">Cookie Policy</a>
+                    </p>
+                    
+                </div>
 
                 </div>
 
@@ -745,5 +989,8 @@
 
     </footer>
 
+   
+    <script src="script.js"></script>
+     
 </body>
 </html>
