@@ -37,15 +37,14 @@ header {
     z-index: 10;
     position: fixed;
     width: 100%;
-   
 }
 
 
 header nav {
     align-items: center;
-    flex: 1;
+    flex: 1 1 auto;
     display: flex;
-    margin-left: 30px;
+    margin-left: 0px;
     min-width: 0;
 }
 
@@ -53,6 +52,9 @@ header nav a:hover {
     color: blue;
 }
 
+header .icon {
+    margin-right: 25px;
+}
 
 .nav-links {
     align-items: center;
@@ -811,8 +813,8 @@ header nav a {
 
 .footer-icon p{
     margin: 5px;
-    display: grid;
-    grid-template-columns: repeat(2, 50px);
+    display: flex;
+    /* grid-template-columns: repeat(2, 50px); */
     gap: 15px 20px;
 }
 
@@ -852,6 +854,133 @@ header nav a {
     align-items: center;
 }
 
+/* big screen=============== */
+@media screen and (max-width: 1100px) {
+
+    header {
+        position: relative;
+        min-height: 76px;
+        padding: 12px 20px;
+        gap: 16px;
+    }
+
+    header nav {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        z-index: 1001;
+    }
+
+    header nav #navlinks {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        width: 100%;
+        max-height: 70vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 10px 20px;
+    }
+
+    header nav #navlinks.active {
+        display: flex;
+    }
+
+    header nav #navlinks > a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        min-height: 48px;
+        padding: 12px 0;
+        border-bottom: 1px solid #eeeeee;
+        font-size: 16px;
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .nav-buttons {
+        margin-left: auto;
+        gap: 12px;
+    }
+
+    .nav-buttons .login {
+        display: none;
+    }
+
+    .start-free-button {
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+
+    .hamburger {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 42px;
+        width: 42px;
+        height: 42px;
+        padding: 0;
+        background: transparent;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        position: relative;
+        z-index: 1002;
+    }
+
+    /* Make mega menus fit smaller screens. */
+
+    .mega-menu,
+    #usecasesmenu,
+    #switchmenu {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        padding: 20px;
+        max-height: 70vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .menu-image {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        min-height: 160px;
+    }
+
+    #usecasesmenu .customer-examples,
+    #usecasesmenu .fitness,
+    #usecasesmenu .education,
+    #usecasesmenu .business,
+    #usecasesmenu .event,
+    #usecasesmenu .youtubers,
+    #usecasesmenu .ranked,
+    #switchmenu .customer-examples,
+    #switchmenu .compare,
+    #switchmenu .success,
+    #switchmenu .uscreen,
+    #switchmenu .customer,
+    #switchmenu .ranked {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    #usecasesmenu .customer-examples,
+    #switchmenu .customer-examples,
+    #usecasesmenu .ranked,
+    #switchmenu .ranked {
+        grid-column: 1 / -1;
+    }
+}
+
 
 /* =========================
    TABLET
@@ -888,6 +1017,22 @@ header nav a {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    header {
+        min-height: 60px;
+        padding: 10px 14px;
+        gap: 8px;
+    }
+
+    header .icon svg {
+        width: 36px;
+        height: 36px;
+    }
+
+    .nav-buttons {
+        gap: 6px;
+    }
+
+
 }
 
 
@@ -902,15 +1047,16 @@ header nav a {
     }
 
     header {
-        height: 75px;
-        padding: 0 15px;
-        gap: 12px;
+        height: 60px;
+        padding: 8px;
+        gap: 5px;
+        padding-top: 30px;
     }
 
 
     header .icon svg {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
     }
 
     .nav-buttons{
@@ -1020,6 +1166,8 @@ header nav a {
         flex-shrink: 0;
         position: relative;
         z-index: 1002;
+        flex-basis: 32px;
+        width: 32px;
     }
 
     .start-free-button {
@@ -1105,7 +1253,10 @@ header nav a {
 /* ================= OTHERS ============== */
 
 .menu-item i {
-    width: 500px;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+
 }
 
 
