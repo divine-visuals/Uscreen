@@ -91,3 +91,41 @@ const clearsearch = document.getElementById("clearsearch");
 
 clearsearch.addEventListener("click", function()
     {articlesearch.value = ""; articlesearch.focus();})
+
+
+    //===================== HAMBURGER=======================================
+const hamburger = document.getElementById("hamburger");
+const navlinks = document.getElementById("navlinks");
+
+hamburger.addEventListener("click", function () {
+    navlinks.classList.toggle("active");
+
+ const icon = hamburger.querySelector("i");
+
+    if (navlinks.classList.contains("active")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-xmark");
+
+        hamburger.setAttribute("aria-label", "Close navigation menu");
+    } else {
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+
+        hamburger.setAttribute("aria-label", "Open navigation menu");
+    }
+});
+
+//======== NAVLINKS==================
+navlinks.querySelectorAll("a").forEach(function(link) {
+link.addEventListener("click", function() {
+navlinks.classList.remove("active");
+
+    const icon = hamburger.querySelector("i");
+
+    icon.classList.remove("fa-xmark");
+    icon.classList.add("fa-bars");
+
+    hamburger.setAttribute("aria-label", "Open navigation menu");
+});
+
+});
