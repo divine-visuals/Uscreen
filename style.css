@@ -1051,6 +1051,7 @@ header nav a {
         padding: 8px;
         gap: 5px;
         padding-top: 30px;
+        position: fixed;
     }
 
 
